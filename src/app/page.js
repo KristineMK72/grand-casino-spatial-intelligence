@@ -1,10 +1,12 @@
 'use client'
 import dynamic from 'next/dynamic';
 import { useState, useEffect } from 'react';
-import { generateMembers, marketingZones } from '../../utils/generateData';
+// CORRECTED PATH: ../utils instead of ../../utils
+import { generateMembers, marketingZones } from '../utils/generateData';
 
+// CORRECTED PATH: ../components instead of ../../components
 // Dynamically import Map to avoid SSR issues
-const Map = dynamic(() => import('../../components/Map'), { ssr: false });
+const Map = dynamic(() => import('../components/Map'), { ssr: false });
 
 export default function Home() {
   const [members, setMembers] = useState([]);
