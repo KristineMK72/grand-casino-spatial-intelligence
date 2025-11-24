@@ -1,4 +1,3 @@
-// components/Map.js
 import { MapContainer, TileLayer, CircleMarker, Popup, Circle, LayersControl, LayerGroup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
@@ -58,7 +57,7 @@ const MapComponent = ({ members, zones }) => {
                   <p>Target: {zone.potential}</p>
                 </Popup>
               </Circle>
-            )}
+            ))} 
           </LayerGroup>
         </Overlay>
 
